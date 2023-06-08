@@ -1,0 +1,14 @@
+public class datatype{
+    public static void main(String[] arguments){
+        byte a=1;
+        //System.out.println(a);
+        short b=345;
+        int c=2375;
+        long d=4696047;
+        float e= 2.34f;
+        double f= 4753.4d;
+        char g='&';
+        boolean h=true;
+        System.out.println("byte "+a+"\n"+"short "+b+ "\n"+"int "+c+"\n"+"long "+d +"\n"+ "float "+e+"\n"+"double "+f+"\n"+"char "+g+"\n"+"boolean "+h);
+    }
+}
