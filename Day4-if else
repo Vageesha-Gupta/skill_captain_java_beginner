@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class largernumber {
+    public static void main(String[] args){
+        Scanner num1obj = new Scanner(System.in);
+        System.out.println("Enter first number");
+        int firstnum = num1obj.nextInt();
+        Scanner num2obj = new Scanner(System.in);
+        System.out.println("Enter second number");
+        int secnum = num2obj.nextInt();
+        if(secnum>firstnum){
+            System.out.println("The second number "+secnum+" is larger than the first number "+ firstnum);
+        }
+        else{
+            System.out.println("The first number "+ firstnum+ " is larger than the second number "+ secnum);
+        }
+
+    }
+
+}
