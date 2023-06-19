@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Calculator{
+    public static void main(String[] args){
+
+        Scanner operator_obj= new Scanner(System.in);
+        System.out.println("Enter operator:");
+        char operator = operator_obj.next().charAt(0);
+
+        Scanner num1_obj= new Scanner(System.in);
+        System.out.println("Enter 1st number:");
+        int num1 = num1_obj.nextInt();
+
+        Scanner num2_obj= new Scanner(System.in);
+        System.out.println("Enter 2nd number:");
+        int num2 = num2_obj.nextInt();
+
+        if(operator=='+'){
+            System.out.println( num1 + num2 );
+        }
+        else if(operator=='-'){
+            System.out.println( num1 - num2 );
+        }
+        else if(operator=='/'){
+            System.out.println( num1 / num2 );
+        }
+        else if(operator=='*'){
+            System.out.println( num1 * num2 );
+        }
+        else{
+            System.out.println("Choose a valid operator ");
+        }
+
+
+
+
+
+
+
+    }
+}
