@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Prim_Ref_Datatype_Assignment{
+    public static void main(String[] args){
+        Scanner Name_obj = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String username = Name_obj.nextLine();
+        Scanner Age_obj = new Scanner(System.in);
+        System.out.println("Enter your age");
+        int userage = Age_obj.nextInt();
+        System.out.println("Hello, " + username + "! You are "+ userage + " years old.");
+
+    }
+
+
+
+}
