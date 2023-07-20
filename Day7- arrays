@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class Arrays{
+    public static void main(String[] args){
+        int[] my_arr= new int[5];
+        Scanner get_int=new Scanner(System.in);
+        for(int i=0;i<5;i++){
+            System.out.println("Enter a number for " +i+ " index:");
+            my_arr[i]=get_int.nextInt();
+        }
+        int sum=0;
+        for(int j=0;j<5;j++){
+            sum+=my_arr[j];
+        }
+
+        int avg=sum/my_arr.length;
+
+        int max=my_arr[0];
+        int min=my_arr[0];
+        for(int i=0;i<4;i++){
+            for(int j=i+1;j<5;j++){
+                if(my_arr[j]>max)
+                    max=my_arr[j];
+
+            }
+
+        }
+
+        for(int i=0;i<5;i++){
+            for(int j=i+1;j<5;j++){
+                if(my_arr[j]<min){
+
+                    min=my_arr[j];
+                }
+
+
+            }
+
+        }
+
+        System.out.println("sum is "+ sum);
+        System.out.println("average is "+ avg);
+        System.out.println("maximum is "+ max);
+        System.out.println("minimum is "+ min);
+
+
+
+
+
+
+
+    }
+
+}
