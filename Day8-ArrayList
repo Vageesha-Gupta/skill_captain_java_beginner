@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner getInp = new Scanner(System.in);
+        ArrayList groceryList=new ArrayList();
+        int option;
+
+        do {
+            System.out.println("Choose an option:\n1)Add items to grocery list\n2)Remove items from grocery list\n3)Print current grocery list\n4)Check if an item is already on grocery list\n5)Clear entire grocery list\n6)Exit");
+            option=getInp.nextInt();
+            if (option != 6) {
+                switch (option) {
+                    case 1:
+                        String item;
+                        System.out.println("Enter the item to be added");
+                        item = getInp.next();
+                        groceryList.add(item);
+                        break;
+
+                    case 2:
+                        String item1;
+                        System.out.println("Enter the item to be removed");
+                        item1 = getInp.next();
+                        groceryList.remove(item1);
+                        break;
+
+                    case 3:
+                        System.out.println(groceryList);
+                        break;
+
+                    case 4:
+                        String item2;
+                        System.out.println("Enter the item to be checked");
+                        item2 = getInp.next();
+                        System.out.println(groceryList.contains(item2));
+                        break;
+
+                    case 5:
+                        groceryList.clear();
+                        break;
+
+                    case 6:
+                        break;
+
+                    default:
+                        System.out.println("Enter a valid option");
+
+                }
+
+            }
+        }
+        while(option!=6);
+    }
+}
